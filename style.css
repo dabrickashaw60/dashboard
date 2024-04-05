@@ -1,0 +1,43 @@
+.container{
+  display: grid;
+  grid-template-rows: 1ft 1fr;
+  grid-template-columns:  clamp(100px, 200px, 200px)  1fr;
+  background: pink;
+}
+.menu-bar{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-color:cornflowerblue;
+  color: white;
+}
+.menu-bar ul{
+  list-style: none;
+}
+.menu-bar ul li{
+
+}
+
+.top-bar{
+  height: 200px;
+}
+.top-bar input{
+
+}
+.main-section{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 100vh;
+}
+.project-block{
+
+}
+.announce-block{
+
+}
+.trending-block{
+
+}
