@@ -12,7 +12,7 @@ body{
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 1;
-  background-color:cornflowerblue;
+  background-color:#45ad4e;
   color: white;
   display: flex;
   align-items: flex-start;
@@ -39,6 +39,7 @@ body{
 }
 .menu-bar ul li{
   font-size: 24px;
+  line-height: 50px;
 }
 
 .top-bar{
@@ -74,30 +75,95 @@ body{
   height: calc(100vh - 200px);
   display: grid;
   grid-template-columns: .75fr .25fr; 
-  background-color: #e6faff; 
+  background-color: #cdf3d0;
+  padding-bottom: 20px; 
 }
 .project-block{
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-
+  margin: 0 20px;
 }
 .main-container{
   overflow: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
 }
+.main-content{
+  background: white;
+  border-radius: .5em;
+  border-left: inset 10px #45ad4e;
+  padding: 10px 10px;
+}
+.main-content h2{
+  margin-bottom: 3px;
+}
+.main-content p{
+  margin: 0px;
+}
+
 .announce-block{
-  
+  display: flex;
+  flex-direction: column;
+
+}
+.content{
+  background: white;
+  border-radius: .5em;
+  margin-right: 20px;
+}
+.announce-block .content-item{
+  padding: 10px 50px;
+  border-bottom: 2px solid rgb(230, 230, 230);
+}
+.announce-block .content-item:last-child{
+  border: none;
+}
+.content-item p{
+  font-size: 12px;
+  margin: 0;
+}
+.content-item h3{
+  margin: 0 auto;
+  font-size: 16px;
 }
 .trending-block{
 
+}
+.trending-block .content-item{
+  display: grid;
+  grid-template-columns: clamp(25px, 50px, 50px) 1fr;
+}
+.trending-block .content .content-item h3{
+  margin: 0px;
+  padding-left: 50px;
+}
+.trending-block .content .content-item p{
+  margin: 0px;
+  padding-left: 50px;
 }
 .icon{
   height: 25px;
   width: auto;
   padding-right: 40px;
   display: inline;
+}
+.icon-small{
+  height: 20px;
+  width: auto;
+  padding: 10px;
+  float: right;
+}
+.profile-pic{
+  height: 50px;
+  width: auto;
+  border-radius: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 5px 20px;
 }
